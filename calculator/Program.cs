@@ -6,47 +6,52 @@ namespace CaclulatorConsoleApp
     {
         static void Main(string[] args)
         {
-            //Input nilai
-            Console.WriteLine("Masukan angka pertama : ");
-            float a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Masukan angka kedua : ");
-            float b = Convert.ToInt32(Console.ReadLine());
-
+            
             //Opsi kalkulator
-            Console.WriteLine();
-            Console.WriteLine("Pilihan operasi hitung kalkulator  ");
-            Console.WriteLine("_________________________________________");
-            Console.WriteLine("1: Perkalian");
-            Console.WriteLine("2: Penjumlahan");
-            Console.WriteLine("3: Pengurangan");
-            Console.WriteLine("4: Pembagian");
-            Console.WriteLine("__________________________________________");
+            Console.WriteLine("Pilihan operasi hitung kalkulator");
+            Console.WriteLine("_________________________________");
+            Console.WriteLine("1. Perkalian");
+            Console.WriteLine("2. Penjumlahan");
+            Console.WriteLine("3. Pengurangan");
+            Console.WriteLine("4. Pembagian");
+            Console.WriteLine("__________________________________");
 
-            Console.WriteLine("Masukan pilihan perhitungan : ");
+            Console.Write("Masukan pilihan perhitungan : ");
             int choice = Convert.ToInt32(Console.ReadLine());
+
+            //Input nilai
+            Console.Write("\n\nMasukan nilai a : ");
+            float a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\nMasukan nilai b : ");
+            float b = Convert.ToInt32(Console.ReadLine());
 
             //Percabangan & eksekusi nilai
             if (choice == 1)
             {
-                Console.WriteLine("Hasil : " + (a * b));
+                Console.WriteLine("\n\nHasil " + a + " * " + b + " = " + (a * b));
+                Console.WriteLine();
+                Console.WriteLine("\n\nTekan sembarang tombol untuk keluar");
                 Console.Read();
             }
             else if (choice == 2)
             {
-                Console.WriteLine("Hasil : " + (a + b));
-
+                Console.WriteLine("\n\nHasil " + a + " + " + b + " = " + (a + b));
+                Console.WriteLine();
+                Console.WriteLine("\n\nTekan sembarang tombol untuk keluar");
                 Console.Read();
             }
             else if (choice == 3)
             {
-                Console.WriteLine("Hasil : " + (a - b));
-
+                Console.WriteLine("\n\nHasil " + a + " - " + b + " = " + (a - b));
+                Console.WriteLine();
+                Console.WriteLine("\n\nTekan sembarang tombol untuk keluar");
                 Console.Read();
             }
             else if (choice == 4)
             {
-                Console.WriteLine("Hasil : " + (a / b));
-
+                Console.WriteLine("\n\nHasil " + a + " / " + b + " = " + (a / b));
+                Console.WriteLine();
+                Console.WriteLine("\n\nTekan sembarang tombol untuk keluar");
                 Console.Read();
             }
 
@@ -54,9 +59,11 @@ namespace CaclulatorConsoleApp
             {
 
                 Console.WriteLine("Pastikan memilih antara menu 1-4");
-
+                Console.WriteLine("\n\nTekan sembarang tombol untuk keluar")
+                Console.Read();
             }
 
+            
         }
     }
 }
