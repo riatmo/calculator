@@ -59,7 +59,7 @@ namespace CaclulatorConsoleApp
             {
 
                 Console.WriteLine("Pastikan memilih antara menu 1-4");
-                Console.WriteLine("\n\nTekan sembarang tombol untuk keluar")
+                Console.WriteLine("\n\nTekan sembarang tombol untuk keluar");
                 Console.Read();
             }
 
